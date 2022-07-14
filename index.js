@@ -1,4 +1,4 @@
-/pegando hora 
+/*pegando hora 
 agora = new Date()
 var horas= agora.getHours()
 var hora =  agora.getMinutes()
@@ -118,5 +118,9 @@ function neww (numeros){
   function soma (a,b){
     return a+b;
   };
-  console.log (soma ( 20,20))
+  console.log (soma ( 20,20))*/
 
+
+  localStorage.setItem('nome', 'raul');
+  var mostrar = localStorage.getItem('nome');
+  document.write(mostrar);
