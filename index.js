@@ -118,9 +118,19 @@ function neww (numeros){
   function soma (a,b){
     return a+b;
   };
-  console.log (soma ( 20,20))*/
+  console.log (soma ( 20,20))
 
 
-  localStorage.setItem('nome', 'raul');
+  *localStorage.setItem('nome', 'raul');
   var mostrar = localStorage.getItem('nome');
   document.write(mostrar);
+
+   *turno = chechar_turno ? jogador_x:jogador_o; //OPERADOR TERNARIO//
+ 
+  *let number ="123456789";
+   console.log(number.tofixed(2));//ARMAZENAR NUMERO COM PRECISÃO DE 2 CASAS DECIMAIS//
+
+  * match* //
+   let texto = "retorna um array que armazena todos os resultados correspondentes.";
+   console.log(texto.match(armazena)); */
+   
