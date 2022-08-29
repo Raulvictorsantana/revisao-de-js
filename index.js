@@ -134,3 +134,18 @@ function neww (numeros){
    let texto = "retorna um array que armazena todos os resultados correspondentes.";
    console.log(texto.match(armazena)); */
    
+
+  //Callbacks
+const depois = require('fs')
+
+  const chamarDepois =(err, contns)=>{  
+     console.log(err,  String(contns) )
+
+   } 
+   depois.readFile('./p1.txt', chamarDepois)
+
+   console.log(2)
+   console.log(3)
+  
+
+   
