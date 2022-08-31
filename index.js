@@ -132,20 +132,33 @@ function neww (numeros){
 
   * match* //
    let texto = "retorna um array que armazena todos os resultados correspondentes.";
-   console.log(texto.match(armazena)); */
+   console.log(texto.match(armazena)); 
    
 
   //Callbacks
 const depois = require('fs')
 
-  const chamarDepois =(err, contns)=>{  
-     console.log(err,  String(contns) )
+  const chamarDepois =(err ,contns)=>{  
+     console.log( err, String(contns) )
 
-   } 
+   }  
+   
    depois.readFile('./p1.txt', chamarDepois)
 
    console.log(2)
    console.log(3)
+  */
   
+ // async e await
 
-   
+ function usuario(id){
+  return fetch(`https://jsonplaceholder.typicode.com/users/${id}` )
+  .then((data)=>data.json())
+  .catch((err)=>console.log(err))
+ }
+ async function mostra(id){
+  const user= await  usuario(id)
+  console.log(`O nome do usuario é ${user}`)
+ }
+ 
+ mostra(1)
