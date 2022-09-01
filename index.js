@@ -147,12 +147,12 @@ const depois = require('fs')
 
    console.log(2)
    console.log(3)
-  */
   
- // async e await
+  
+ // async e await then catch
 
  function usuario(id){
-  return fetch(`https://jsonplaceholder.typicode.com/users/${id}` )
+   return fetch(`https://jsonplaceholder.typicode.com/users/${id}` )
   .then((data)=>data.json())
   .catch((err)=>console.log(err))
  }
@@ -162,3 +162,17 @@ const depois = require('fs')
  }
  
  mostra(1)
+*/
+
+ const novo = id =>{
+  fetch (`https://jsonplaceholder.typicode.com/users/${id}`)
+ .then((response)=>response.json())
+ 
+  .catch(data=>{
+    console.log (data)
+  })
+  .catch(erro=>{
+    console.log( "Deu errado") 
+  })
+ }
+ novo (3)
