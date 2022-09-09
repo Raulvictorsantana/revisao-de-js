@@ -1,4 +1,4 @@
-/*pegando hora 
+/*//pegando hora 
 agora = new Date()
 var horas= agora.getHours()
 var hora =  agora.getMinutes()
@@ -125,12 +125,12 @@ function neww (numeros){
   var mostrar = localStorage.getItem('nome');
   document.write(mostrar);
 
-   *turno = chechar_turno ? jogador_x:jogador_o; //OPERADOR TERNARIO//
+   turno = chechar_turno ? jogador_x:jogador_o; //OPERADOR TERNARIO//
  
-  *let number ="123456789";
+  let number ="123456789";
    console.log(number.tofixed(2));//ARMAZENAR NUMERO COM PRECISÃO DE 2 CASAS DECIMAIS//
 
-  * match* //
+   match* //
    let texto = "retorna um array que armazena todos os resultados correspondentes.";
    console.log(texto.match(armazena)); 
    
@@ -141,16 +141,13 @@ const depois = require('fs')
   const chamarDepois =(err ,contns)=>{  
      console.log( err, String(contns) )
 
-   }  
+  }  
    
    depois.readFile('./p1.txt', chamarDepois)
 
    console.log(2)
    console.log(3)
   
-  
- // async e await then catch
-
  function usuario(id){
    return fetch(`https://jsonplaceholder.typicode.com/users/${id}` )
   .then((data)=>data.json())
@@ -162,12 +159,11 @@ const depois = require('fs')
  }
  
  mostra(1)
-*/
 
  const novo = id =>{
   fetch (`https://jsonplaceholder.typicode.com/users/${id}`)
  .then((response)=>response.json())
- 
+
   .catch(data=>{
     console.log (data)
   })
@@ -176,3 +172,50 @@ const depois = require('fs')
   })
  }
  novo (3)
+ 
+//ttt
+const depois = require('fs')
+
+  const chamarDepois =(err ,contns)=>{  
+     console.log( err, String(contns) )
+
+  }  
+   
+   depois.readFile('./p1.txt', chamarDepois)
+
+   console.log(2)
+   console.log(3)
+
+const depois = require('fs')
+
+     const agora =(err,contns)=>{
+      console.log(String(contns))
+    }
+   depois.readFile('./p1.txt',agora)
+    console.log(2)
+    console.log(3)
+//quando da certo
+ .then(passou)
+
+ .catch(data=>{
+  console.log (data)
+  //quando da errado
+})
+*/
+
+ function api(){
+  
+ fetch('https://jsonplaceholder.typicode.com/todos/1')
+.then(response => response.json())
+.then(json => console.log(json))
+
+
+}
+api()
+
+
+
+
+      
+
+    
