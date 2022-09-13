@@ -201,7 +201,9 @@ const depois = require('fs')
   console.log (data)
   //quando da errado
 })
-*/
+
+
+
 
  function api(){
   
@@ -211,7 +213,39 @@ const depois = require('fs')
 
 
 }
-api()
+api()*/ 
+
+//consferida  mais uma vez alguns metodos de manipulação de array
+let foARRAY = [10,20,30,5,8,10,60]
+
+foARRAY.forEach(function(ele, indi,){
+ // console.log('elemento',ele,'indice', indi,"/", foARRAY.toString() )
+
+})
+ //console.log (foARRAY.indexOf(5))
+
+
+
+  var ult = foARRAY.unshift('55 ')
+ //  console.log(foARRAY)
+
+ 
+
+ var pime = foARRAY.pop (1,3)
+
+// console.log(pime)
+
+ //console.log(foARRAY)
+
+ var o = foARRAY.shift()
+ //console.log(o)
+ //console.log(foARRAY)
+
+ 
+ //console.log(foARRAY.slice( 1,2))
+
+
+ 
 
 
 
